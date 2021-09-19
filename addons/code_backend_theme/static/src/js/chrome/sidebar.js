@@ -1,4 +1,4 @@
-odoo.define('code_backend_theme.SideBar', function (require) {
+odoo.define('code_backend_theme.Sidebar', function (require) {
     "use strict";
 
     var Widget = require('web.Widget');

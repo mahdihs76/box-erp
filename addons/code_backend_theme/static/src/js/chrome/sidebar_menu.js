@@ -3,7 +3,7 @@ odoo.define('code_backend_theme.SidebarMenu', function (require) {
 
     const config = require("web.config");
     const Menu = require("web.Menu");
-    const SideBar = require("code_backend_theme.SideBar");
+    const SideBar = require("code_backend_theme.Sidebar");
 
     Menu.include({
         start() {
