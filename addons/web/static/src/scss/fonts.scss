@@ -1,70 +1,90 @@
 // ------------------------------------------------------------------
 // Lato
 // ------------------------------------------------------------------
-$lato-font-path: '../fonts/lato';
 
-@mixin lato-font($type, $weight, $style) {
-    // Cyrillic: U+0400-04FF, U+0500-052F
-    @font-face {
-        font-family: 'Odoo Unicode Support Noto';
-        src: url('https://fonts.odoocdn.com/fonts/noto/NotoSans-#{$type}.woff2') format('woff2'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSans-#{$type}.woff') format('woff'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSans-#{$type}.ttf') format('truetype');
-        font-weight: $weight;
-        font-style: $style;
-        unicode-range: U+0400-04FF, U+0500-052F;
-    }
-    // Hebrew: U+0590-05FF, U+FB1D-FB4F
-    @font-face {
-        font-family: 'Odoo Unicode Support Noto';
-        src: url('https://fonts.odoocdn.com/fonts/noto/NotoSansHebrew-#{$type}.woff2') format('woff2'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSansHebrew-#{$type}.woff') format('woff'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSansHebrew-#{$type}.ttf') format('truetype');
-        font-weight: $weight;
-        font-style: $style;
-        unicode-range: U+0590-05FF, U+FB1D-FB4F;
-    }
-    // Arabic: U+0600-06FF, U+0750-077F
-    @font-face {
-        font-family: 'Odoo Unicode Support Noto';
-        src: url('https://fonts.odoocdn.com/fonts/noto/NotoSansArabic-#{$type}.woff2') format('woff2'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSansArabic-#{$type}.woff') format('woff'),
-             url('https://fonts.odoocdn.com/fonts/noto/NotoSansArabic-#{$type}.ttf') format('truetype');
-        font-weight: $weight;
-        font-style: $style;
-        unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF;
+
+@mixin mk-iransans-font-face() {
+        @font-face {
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
     }
 
     @font-face {
-        font-family: 'Lato';
-        src: url('#{$lato-font-path}/Lato-#{$type}-webfont.eot');
-        src: url('#{$lato-font-path}/Lato-#{$type}-webfont.eot?#iefix') format('embedded-opentype'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.woff') format('woff'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.ttf') format('truetype'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.svg#Lato') format('svg');
-        font-weight: $weight;
-        font-style: $style;
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
     }
+
     @font-face {
-        font-family: 'Lato-#{$type}';
-        src: url('#{$lato-font-path}/Lato-#{$type}-webfont.eot');
-        src: url('#{$lato-font-path}/Lato-#{$type}-webfont.eot?#iefix') format('embedded-opentype'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.woff') format('woff'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.ttf') format('truetype'),
-             url('#{$lato-font-path}/Lato-#{$type}-webfont.svg#Roboto') format('svg');
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
     }
 }
 
-@mixin lato-font-pair($type, $weight) {
-    @include lato-font('#{$type}', $weight, normal);
-    @include lato-font('#{$type}Ita', $weight, italic);
-}
 
-@include lato-font-pair('Hai', 100);
-@include lato-font-pair('Lig', 300);
-@include lato-font-pair('Reg', 400);
-@include lato-font-pair('Bol', 700);
-@include lato-font-pair('Bla', 900);
+
+@include mk-iransans-font-face();
+
 
 // ------------------------------------------------------------------
 // Google fonts
