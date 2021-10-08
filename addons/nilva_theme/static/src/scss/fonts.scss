@@ -1,0 +1,104 @@
+/**********************************************************************************
+*
+*    Copyright (c) 2017-today MuK IT GmbH.
+*
+*    This file is part of MuK Grid Snippets
+*    (see https://mukit.at).
+*
+*    This program is free software: you can redistribute it and/or modify
+*    it under the terms of the GNU Lesser General Public License as published by
+*    the Free Software Foundation, either version 3 of the License, or
+*    (at your option) any later version.
+*
+*    This program is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU Lesser General Public License for more details.
+*
+*    You should have received a copy of the GNU Lesser General Public License
+*    along with this program. If not, see <http://www.gnu.org/licenses/>.
+*
+**********************************************************************************/
+
+
+@mixin mk-iransans-font-face() {
+        @font-face {
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+}
+
+
+
+@include mk-iransans-font-face();
