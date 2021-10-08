@@ -23,7 +23,7 @@
 
 @mixin mk-iransans-font-face() {
         @font-face {
-      font-family: IRANSansMobile-en;
+      font-family: 'IRANSansMobile-en';
       font-style: normal;
       font-weight: bold;
       src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot');
@@ -42,7 +42,7 @@
     }
 
     @font-face {
-      font-family: IRANSansMobile-en;
+      font-family: 'IRANSansMobile-en';
       font-style: normal;
       font-weight: 300;
       src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot');
@@ -61,7 +61,7 @@
     }
 
     @font-face {
-      font-family: IRANSansMobile-fa;
+      font-family: 'IRANSansMobile-fa';
       font-style: normal;
       font-weight: bold;
       src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot');
@@ -80,7 +80,7 @@
     }
 
     @font-face {
-      font-family: IRANSansMobile-fa;
+      font-family: 'IRANSansMobile-fa';
       font-style: normal;
       font-weight: 300;
       src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot');
