@@ -20,41 +20,85 @@
 *
 **********************************************************************************/
 
-$font-path-noto: '../fonts/Noto';
-$font-path-roboto: '../fonts/Roboto';
 
-@mixin mk-roboto-font-face($name, $weight, $style) {
-	@font-face {
-        font-family: 'Noto';
-        src: url('#{$font-path-noto}/Noto-#{$name}.eot');
-        src: url('#{$font-path-noto}/Noto-#{$name}.eot?#iefix') format('embedded-opentype'),
-             url('#{$font-path-noto}/Noto-#{$name}.woff') format('woff'),
-             url('#{$font-path-noto}/Noto-#{$name}.ttf') format('truetype'),
-             url('#{$font-path-noto}/Noto-#{$name}.svg#Noto') format('svg');
-        font-weight: $weight;
-        font-style: $style;
+@mixin mk-iransans-font-face() {
+        @font-face {
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
     }
+
     @font-face {
-        font-family: 'Roboto';
-        src: url('#{$font-path-roboto}/Roboto-#{$name}.eot');
-        src: url('#{$font-path-roboto}/Roboto-#{$name}.eot?#iefix') format('embedded-opentype'),
-             url('#{$font-path-roboto}/Roboto-#{$name}.woff') format('woff'),
-             url('#{$font-path-roboto}/Roboto-#{$name}.ttf') format('truetype'),
-             url('#{$font-path-roboto}/Roboto-#{$name}.svg#Roboto') format('svg');
-        font-weight: $weight;
-        font-style: $style;
+      font-family: IRANSansMobile-en;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-en/en-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.ttf')
+          format('truetype');
+      font-display: fallback;
+    }
+
+    @font-face {
+      font-family: IRANSansMobile-fa;
+      font-style: normal;
+      font-weight: 300;
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot');
+      src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.eot?#iefix')
+          format('embedded-opentype'),
+        /* IE6-8 */
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2')
+          format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff')
+          format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+          url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.ttf')
+          format('truetype');
+      font-display: fallback;
     }
 }
 
-@include mk-roboto-font-face('Thin', 100, normal);
-@include mk-roboto-font-face('ThinItalic', 100, italic);
-@include mk-roboto-font-face('Light', 300, normal);
-@include mk-roboto-font-face('LightItalic', 300, italic);
-@include mk-roboto-font-face('Regular', 400, normal);
-@include mk-roboto-font-face('Italic', 400, italic);
-@include mk-roboto-font-face('Medium', 500, normal);
-@include mk-roboto-font-face('MediumItalic', 500, italic);
-@include mk-roboto-font-face('Bold', 700, normal);
-@include mk-roboto-font-face('BoldItalic', 700, italic);
-@include mk-roboto-font-face('Black', 900, normal);
-@include mk-roboto-font-face('BlackItalic', 900, italic);
+
+
+@include mk-iransans-font-face();
